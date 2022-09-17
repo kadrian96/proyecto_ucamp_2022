@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox</title>
+</head>
+<body>
+    <ul>
+
+        <li><a href="">Inicio</a></li>
+        <li><a href="">Conocenos</a></li>
+        <li><a href="">Contacto</a></li>
+        <li><a href="">Registrate</a></li>
+        
+    </ul>
+    <style>
+        ul{
+            display: flex;
+            justify-content: space-between;
+            padding: 0px;
+            list-style: none;
+            flex-direction: column; /* row */
+            width: max-content;
+            gap: 5px;
+        }
+        ul li{
+            background: #93d7dc;
+            flex-grow: 1;
+
+        }
+
+        ul a, ul a:link{
+            font-family: sans-serif;
+            text-decoration: none;
+            color: #ffff;
+            padding: 8px;
+            display: block;
+            width: 100%;
+        }
+
+
+
+    </style>
+    
+</body>
+</html>
